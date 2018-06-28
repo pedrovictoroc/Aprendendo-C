@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  printf("Primeira calculadora!! \n");
+  int num1, num2;
+  printf("Entre o primeiro numero: \n");
+  scanf("%i",&num1);
+  printf("Entre o segundo numero: \n");
+  scanf("%i",&num2);
+
+  int soma = num1 + num2;
+  int sub = num1 - num2;
+  int mult = num1 * num2;
+  int div = num1/num2;
+
+  printf("A soma eh: %i \n",soma);
+  printf("A subtracao eh: %i \n",sub);
+  printf("A mult eh: %i \n",mult);
+  printf("A div eh %i \n",div);
+  getchar();
+
+  return 0;
+}
