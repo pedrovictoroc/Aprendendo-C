@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main (){
+  float a,b,c;
+  printf(" Essa eh a calculadora de eq. grau 2! \n");
+  printf("\t Entre o valor do A: \n");
+  scanf("%f",&a);
+  printf("\t Entre o valor do B: \n");
+  scanf("%f",&b);
+  printf("\t Entre o valor do C: \n");
+  scanf("%f",&c);
+
+  if (a==0){
+    float resultado = (-c)/b;
+    printf("Trata-se de uma eq. grau 1, o x vale: %f",resultado);
+  }
+  else if (b == 0){
+    float resultado = sqrt(-c/a);
+    printf("Os valores de x sao: %f, e %f ",resultado,-resultado);
+  }
+
+  else if (c==0){
+    float resultado = -b/a;
+    printf("Os valores de x sao: 0 e %f",resultado); 
+  }
+
+  else{
+    float delta = sqrt(pow(b,2) - 4*a*c);
+    float resultado1 = (-b + delta)/(2*a);
+    float resultado2 = (-b - delta)/(2*a);
+    printf("Os valores de x sao %f e %f",resultado1, resultado2);
+
+  }
+  return 0;
+}
