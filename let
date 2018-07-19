@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+  int resposta;
+  printf("Quer namorar comigo? \n");
+  printf("\t 1 para SIM \n\t 2 para NAO \n");
+  scanf("%i",&resposta);
+  if (resposta==1){
+    printf("Finalmente *-*");
+  }
+  else if (resposta == 2){
+    printf("pois va tomar no cu");
+  }
+  else{
+    printf("E de sim ou nao krl");
+  }
+
+  return 0;
+}
