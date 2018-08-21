@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define DIAS_POR_ANO	365.25
+#define HORAS_POR_DIA	24
+#define MINUTOS_POR_HORA	60
+#define BATIMENTOS_POR_MIN	70
+
+int main(){
+	int x,qtde;
+
+	printf("tamanho de um int :%ld \n", sizeof(int));
+	printf("tamanho de um long int :%ld \n", sizeof(long int));
+	printf("tamanho de um long long int :%ld \n", sizeof(long long int));
+
+	printf("Entre a idade em anos: \n");
+	scanf("%d", &x);
+
+	qtde = x * DIAS_POR_ANO * HORAS_POR_DIA * MINUTOS_POR_HORA * BATIMENTOS_POR_MIN;
+
+	printf("O coraçao deve ter batido %d vezes \n", qtde);
+	return 0;
+}
