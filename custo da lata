@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define CUSTO	100
+#define PI	3.14
+int main(){
+	double raio,altura,preco;
+	printf("Entre o raio da lata em metro: \n");
+	scanf("%lf",&raio);
+	printf("Entre a altura da lata em metros: \n");
+	scanf("%lf",&altura);
+
+	preco = CUSTO*((PI*raio*raio*2) + (2* PI * raio * altura));
+
+	printf("\t O preço final será: %lf",preco);
+
+	return 0;
+}
