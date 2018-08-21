@@ -1,0 +1,18 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+#define ILUMINACAO_PUBLICA	10
+#define TAXA_ECONOMICA	0.10
+#define TAXA_NORMAL	0.13
+int main (){
+	double economico,normal,total;
+	printf("Entre a quantidade de Kwh em periodo economico: \n");
+	scanf ("%lf",&economico);
+	printf("Entre a quantidade de Kwh em periodo normal: \n");
+	scanf("%lf",&normal);
+
+	total = ILUMINACAO_PUBLICA + (economico * TAXA_ECONOMICA) + (normal *TAXA_NORMAL);
+	
+	printf("\t Quantidade a pagar: %lf",total);
+	return 0;
+}
