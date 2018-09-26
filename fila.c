@@ -119,6 +119,7 @@ int menu(){
 	printf("4 --> Remover elemento\n");
 	printf("\tOpçao: ");
 	scanf("%d",&opt);
+	return opt;
 
 }
 
@@ -127,7 +128,7 @@ void opcao(Node *FILA,int op){
 
 	switch(op){
 		case 0:
-			libera(FILA);
+			free(FILA); //alterei aq antes era Liberar
 			break;
 		case 1:
 			libera(FILA);
